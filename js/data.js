@@ -14,13 +14,13 @@
 const portfolioData = {
   // Informasi Pribadi
   profile: {
-    name: "M. Fauzi",
+    name: "Muchamad Fauzi",
     title: "Senior iOS Developer & Swift Specialist",
-    tagline: "Merancang & Membangun Pengalaman Native iOS Berkinerja Tinggi, Elegan, dan Tanpa Kompromi.",
-    shortBio: "Seorang iOS Developer dengan fokus pada Swift, SwiftUI, dan Clean Architecture. Berpengalaman membangun aplikasi native dengan animasi halus, integrasi sistem mendalam (WidgetKit, CoreData/SwiftData, HealthKit), serta arsitektur yang modular dan teruji.",
+    tagline: "Merancang & Membangun Pengalaman Native iOS Berkinerja Tinggi, Skalabilitas Tinggi, dan Handal.",
+    shortBio: "Seorang iOS Developer dengan rekam jejak mengembangkan aplikasi native berskala besar, termasuk ekosistem perbankan digital nasional (BRImo), tanda tangan digital tersertifikasi (Privy), dan enterprise HR (Linov HR 5). Berpengalaman mendalam dalam Swift, UIKit, SwiftUI, arsitektur modular, dan standar keamanan mobile.",
     avatar: "assets/images/profile/avatar.svg",
     location: "Jakarta, Indonesia",
-    statusBadge: "Tersedia untuk Full-time & Proyek Baru",
+    statusBadge: "Tersedia untuk Full-time & Konsultasi iOS",
     email: "fauzi.iosdev@example.com",
     github: "https://github.com",
     linkedin: "https://linkedin.com",
@@ -28,9 +28,9 @@ const portfolioData = {
     resumeUrl: "#contact",
     stats: [
       { label: "Tahun Pengalaman iOS", value: "4+", prefix: "", suffix: "" },
-      { label: "Aplikasi di App Store", value: "10+", prefix: "", suffix: "" },
+      { label: "Aplikasi Unggulan", value: "3", prefix: "", suffix: " Apps" },
       { label: "Crash-Free Users", value: "99.9", prefix: "", suffix: "%" },
-      { label: "Total Downloads", value: "250", prefix: "", suffix: "K+" }
+      { label: "Total Pengguna Aktif", value: "50", prefix: "", suffix: "M+" }
     ]
   },
 
@@ -81,176 +81,138 @@ const portfolioData = {
   ],
 
   // Daftar Proyek Aplikasi iOS (Bisa Anda tambah, kurangi, atau ubah screenshot-nya)
+  // Daftar 3 Aplikasi Utama iOS
   projects: [
     {
-      id: "kriptopay",
-      title: "KriptoPay iOS Wallet",
-      subtitle: "Fintech & Web3 Asset Management",
+      id: "brimo",
+      title: "BRImo (BRI Mobile Banking)",
+      subtitle: "Flagship Digital Banking & Lifestyle Ecosystem",
       category: "fintech",
-      categoryLabel: "FinTech & Web3",
+      categoryLabel: "Digital Banking",
       featured: true,
-      appIconBg: "from-blue-700 to-sky-600",
-      appIconSymbol: "coins",
-      role: "Lead iOS Engineer",
-      timeline: "6 Bulan",
-      thumbnail: "assets/images/projects/kripto-pay-1.svg",
+      appIconBg: "from-blue-700 to-sky-500",
+      appIconSymbol: "landmark",
+      role: "iOS Developer / Module Engineer",
+      timeline: "Flagship Project",
+      thumbnail: "assets/images/projects/brimo/brimo-home.png",
       screenshots: [
-        "assets/images/projects/kripto-pay-1.svg",
-        "assets/images/projects/kripto-pay-2.svg"
+        "assets/images/projects/brimo/brimo-home.png",
+        "assets/images/projects/brimo/brimo-login.png",
+        "assets/images/projects/brimo/brimo-atur-fitur.png",
+        "assets/images/projects/brimo/brimo-favorit.png",
+        "assets/images/projects/brimo/brimo-account.png"
       ],
-      shortDescription: "Aplikasi dompet digital modern untuk manajemen aset multi-currency, swap instan, dan riwayat transaksi dengan integrasi LocalAuthentication (Face ID).",
-      fullDescription: "KriptoPay dibangun secara native menggunakan SwiftUI penuh dengan pola Clean Architecture + MVVM. Mengimplementasikan Swift Charts untuk visualisasi riwayat harga aset real-time, Keychain Services terenkripsi untuk keamanan private key, serta WebSocket untuk update kurs tanpa delay.",
+      shortDescription: "Aplikasi mobile banking terbesar di Indonesia dengan puluhan juta pengguna aktif, menghadirkan transaksi finansial real-time, personalisasi dashboard (Atur Fitur), QRIS, dan modul Lifestyle perbankan.",
+      fullDescription: "Berkontribusi langsung dalam pengembangan dan peningkatan performa aplikasi perbankan digital BRImo pada platform native iOS. Terlibat aktif dalam implementasi modul Dashboard Lifestyle, personalisasi menu (Atur Fitur & Fitur Favorit), alur konfirmasi transaksi (Pattern Confirmation & Receipt Revamp), integrasi autentikasi biometrik Face ID/Touch ID, serta pemisahan kode modular yang aman dan berkinerja tinggi.",
       metrics: {
-        downloads: "120K+",
-        rating: "4.9 ★",
-        crashFree: "99.95%"
+        downloads: "50M+",
+        rating: "4.7 ★",
+        crashFree: "99.92%"
       },
-      techStack: ["SwiftUI", "Combine", "Swift Charts", "CryptoKit", "Face ID", "Clean Architecture", "WebSocket"],
+      techStack: ["Swift", "UIKit", "SwiftUI", "MVVM-C", "Clean Architecture", "Biometric Auth", "CoreSecurity", "AVFoundation (QRIS)"],
       keyFeatures: [
-        "Dashboard portofolio interaktif dengan animasi grafik Swift Charts kustom.",
-        "Autentikasi biometrik Face ID / Touch ID menggunakan LocalAuthentication framework.",
-        "Kirim & terima aset kripto dengan pemindaian QR Code kamera native (AVFoundation).",
-        "Enkripsi keychain hardware-backed (Secure Enclave) untuk keamanan kunci dompet."
+        "Dashboard Utama & Personalisasi Menu 'Atur Fitur' untuk memudahkan akses transaksi harian nasabah.",
+        "Fast Menu sebelum login untuk transaksi kilat (QRIS, BRIVA, E-Wallet, Pulsa/Data).",
+        "Integrasi Alur Konfirmasi Transaksi (Pattern Confirmation) & Tanda Terima Digital (Receipt Revamp).",
+        "Autentikasi keamanan ganda (Biometric Face ID / Touch ID & Enkripsi Sesi Perbankan)."
       ],
       technicalChallenges: [
         {
-          problem: "Streaming data websocket harga kripto yang sangat cepat menyebabkan rendering UI sering freeze.",
-          solution: "Menerapkan Combine debounce & publisher buffer pada background thread sebelum mempublikasikan state ke @MainActor."
+          problem: "Menjaga stabilitas dan responsivitas UI dengan tingginya variasi komponen modular pada halaman Dashboard & Lifestyle.",
+          solution: "Menerapkan pemisahan responsibilitas arsitektur MVVM-Coordinator, reusable components, serta rendering asinkronus agar interaksi pengguna tetap halus dan efisien."
         },
         {
-          problem: "Keamanan transaksi berisiko tinggi saat aplikasi beralih ke multitasking snapshot.",
-          solution: "Mengimplementasikan proteksi privacy blur otomatis di sceneDidEnterBackground untuk menyamarkan nominal aset."
+          problem: "Keamanan data sensitif transaksi keuangan dan perlindungan privasi saldo rekening nasabah pada layer presentasi.",
+          solution: "Mengintegrasikan proteksi privacy blur otomatis saat aplikasi beralih ke multitasking snapshot serta masking nominal saldo secara dinamis."
         }
       ],
       links: {
-        appStore: "https://apps.apple.com",
-        github: "https://github.com",
+        appStore: "https://apps.apple.com/id/app/brimo-bri/id1439730843",
+        github: null,
         testFlight: null
       }
     },
 
     {
-      id: "fitpulse",
-      title: "FitPulse: Health Tracker",
-      subtitle: "Personal Fitness & HealthKit Companion",
-      category: "health",
-      categoryLabel: "Health & Fitness",
+      id: "privy",
+      title: "Privy - Digital Signature & Identity",
+      subtitle: "PSrE-Certified Digital Signature & e-KYC Trust",
+      category: "security",
+      categoryLabel: "Digital Identity & Trust",
       featured: true,
-      appIconBg: "from-rose-500 to-emerald-500",
-      appIconSymbol: "heart-pulse",
-      role: "Senior iOS Developer",
-      timeline: "5 Bulan",
-      thumbnail: "assets/images/projects/fitpulse-1.svg",
+      appIconBg: "from-rose-600 to-red-500",
+      appIconSymbol: "file-check",
+      role: "iOS Developer",
+      timeline: "Enterprise Security",
+      thumbnail: "assets/images/projects/privy/privy-mockup.svg",
       screenshots: [
-        "assets/images/projects/fitpulse-1.svg"
+        "assets/images/projects/privy/privy-mockup.svg"
       ],
-      shortDescription: "Aplikasi pelacak kebugaran terpadu dengan sinkronisasi HealthKit, pelacakan rute lari GPS real-time, dan tampilan Activity Ring Apple Watch.",
-      fullDescription: "FitPulse dirancang untuk memanfaatkan potensi hardware iPhone dan Apple Watch secara maksimal. Mengintegrasikan HealthKit secara mendalam untuk membaca detak jantung, pola tidur, dan pembakaran kalori, serta memanfaatkan CoreMotion dan CoreLocation untuk penghitungan langkah dan pemetaan rute olahraga luar ruangan.",
+      shortDescription: "Aplikasi identitas digital dan tanda tangan elektronik tersertifikasi (PSrE) yang sah secara hukum, mengamankan penandatanganan dokumen digital multi-pihak secara native di iOS.",
+      fullDescription: "Mengembangkan modul penandatanganan dokumen elektronik dan verifikasi identitas pengguna pada aplikasi Privy iOS. Bertanggung jawab atas integrasi PDF rendering & interaksi kustom berbasis PDFKit, alur verifikasi biometrik e-KYC dengan liveness detection, serta pengelolaan sertifikat digital berstandar keamanan tinggi.",
       metrics: {
-        downloads: "85K+",
+        downloads: "10M+",
         rating: "4.8 ★",
+        crashFree: "99.95%"
+      },
+      techStack: ["Swift", "PDFKit", "CryptoKit", "Biometric Auth", "Face Liveness Detection", "Clean Architecture", "SPM"],
+      keyFeatures: [
+        "Tanda tangan digital berstandar hukum legal di Indonesia dengan sertifikat elektronik terakreditasi Kominfo.",
+        "Viewer dokumen PDF interaktif dengan navigasi cepat dan penempatan letak tanda tangan presisi.",
+        "Verifikasi identitas biometrik dan deteksi keaslian wajah (Liveness Detection) untuk mencegah spoofing.",
+        "Sistem notifikasi pengingat dokumen dan audit trail transaksi dokumen legal."
+      ],
+      technicalChallenges: [
+        {
+          problem: "Rendering file dokumen PDF berukuran besar (puluhan megabyte) yang rentan menyebabkan memory peak dan lag pada scrolling.",
+          solution: "Mengoptimalkan PDFKit dengan tiled asynchronous rendering dan caching halaman yang cerdas untuk menjaga pemakaian memori tetap rendah."
+        }
+      ],
+      links: {
+        appStore: "https://apps.apple.com/id/app/privy-digital-signature/id1254397637",
+        github: null,
+        testFlight: null
+      }
+    },
+
+    {
+      id: "linovhr",
+      title: "Linov HR 5 (LinovHR Mobile)",
+      subtitle: "Enterprise Human Resource Information System (HRIS)",
+      category: "enterprise",
+      categoryLabel: "Enterprise & HRIS",
+      featured: true,
+      appIconBg: "from-emerald-600 to-teal-500",
+      appIconSymbol: "briefcase",
+      role: "iOS Developer",
+      timeline: "Enterprise HRMS",
+      thumbnail: "assets/images/projects/linovhr/linovhr-mockup.svg",
+      screenshots: [
+        "assets/images/projects/linovhr/linovhr-mockup.svg"
+      ],
+      shortDescription: "Solusi mobile enterprise HRIS generasi terbaru untuk absensi cerdas berbasis GPS & Face Recognition, pengajuan cuti, lembur, dan slip gaji terenkripsi.",
+      fullDescription: "Pengembangan arsitektur mobile pada Linov HR versi 5 yang melayani ribuan karyawan perusahaan terkemuka. Mengimplementasikan fitur absensi presisi dengan validasi geofencing lokasi kantor dan validasi biometrik wajah anti fake-GPS, manajemen alur approval berjenjang, serta proteksi keamanan pada akses slip gaji digital.",
+      metrics: {
+        downloads: "500K+",
+        rating: "4.6 ★",
         crashFree: "99.9%"
       },
-      techStack: ["SwiftUI", "HealthKit", "CoreMotion", "CoreLocation", "MapKit", "WidgetKit"],
+      techStack: ["Swift", "SwiftUI", "CoreLocation (Geofencing)", "Vision Framework", "LocalAuthentication", "REST API", "APNs"],
       keyFeatures: [
-        "Integrasi dua arah dengan Apple Health (HealthKit Store queries & background observers).",
-        "Cincin aktivitas interaktif dengan kalkulasi target kalori dinamis.",
-        "Widget Lock Screen dan Home Screen iOS 17 menggunakan WidgetKit.",
-        "Live Activities pada Dynamic Island saat sesi latihan lari sedang berlangsung."
+        "Clock-in & Clock-out pintar berbasis validasi radius Geofencing GPS dan pengenalan wajah real-time.",
+        "Pengajuan cuti, izin, lembur, dan reimbursement dengan alur persetujuan (approval) atasan instan.",
+        "Akses slip gaji digital (e-Payslip) yang diproteksi Face ID / Touch ID dan terenkripsi.",
+        "Kalender kerja interaktif, info shift kerja, dan feed pengumuman internal perusahaan."
       ],
       technicalChallenges: [
         {
-          problem: "Penggunaan baterai yang boros saat aplikasi melacak GPS rute lari di background.",
-          solution: "Mengonfigurasi CoreLocation dengan kCLLocationAccuracyBestForNavigation dan pausesLocationUpdatesAutomatically saat pengguna berhenti."
+          problem: "Mencegah manipulasi lokasi (mock location/fake GPS) dan fraud presensi karyawan.",
+          solution: "Menerapkan verifikasi integritas koordinat GPS dengan validasi akurasi horizontal/vertikal CoreLocation, deteksi perangkat jailbreak, dan validasi timestamp waktu server."
         }
       ],
       links: {
-        appStore: "https://apps.apple.com",
-        github: "https://github.com",
-        testFlight: null
-      }
-    },
-
-    {
-      id: "taskflow",
-      title: "TaskFlow: Focus & Notes",
-      subtitle: "Minimalist Productivity & SwiftData",
-      category: "productivity",
-      categoryLabel: "Produktivitas",
-      featured: true,
-      appIconBg: "from-amber-500 to-orange-600",
-      appIconSymbol: "check-square",
-      role: "Solo iOS Developer",
-      timeline: "3 Bulan",
-      thumbnail: "assets/images/projects/taskflow-1.svg",
-      screenshots: [
-        "assets/images/projects/taskflow-1.svg"
-      ],
-      shortDescription: "Aplikasi produktivitas berbasis waktu dengan integrasi SwiftData lokal pertama dan sinkronisasi otomatis CloudKit di seluruh perangkat Apple.",
-      fullDescription: "TaskFlow menghadirkan antarmuka minimalis anti-distraksi untuk mencatat to-do list, reminder kontekstual, dan timer fokus gaya Pomodoro. Sepenuhnya memanfaatkan SwiftData @Model untuk persistensi performa tinggi dan CloudKit mirroring tanpa perlu server eksternal.",
-      metrics: {
-        downloads: "40K+",
-        rating: "4.9 ★",
-        crashFree: "100%"
-      },
-      techStack: ["Swift 6", "SwiftUI", "SwiftData", "CloudKit Sync", "UserNotifications", "Haptics"],
-      keyFeatures: [
-        "Sinkronisasi instan tanpa login via iCloud Private Database (CloudKit).",
-        "Feedback haptik halus menggunakan UIFeedbackGenerator untuk setiap interaksi tombol.",
-        "Notifikasi pengingat terjadwal lokal (UNUserNotificationCenter).",
-        "Dukungan penuh Dark Mode & Tinted App Icons pada iOS 18."
-      ],
-      technicalChallenges: [
-        {
-          problem: "Migrasi struktur schema data dari model sederhana ke relasi bertingkat tanpa merusak data pengguna.",
-          solution: "Membuat VersionedSchema dan SchemaMigrationPlan di SwiftData dengan fallback pengujian otomatis."
-        }
-      ],
-      links: {
-        appStore: "https://apps.apple.com",
-        github: "https://github.com",
-        testFlight: null
-      }
-    },
-
-    {
-      id: "coffeeshop",
-      title: "Artisan Coffee & Deli",
-      subtitle: "E-Commerce with Apple Pay & MapKit",
-      category: "ecommerce",
-      categoryLabel: "E-Commerce",
-      featured: false,
-      appIconBg: "from-amber-700 to-yellow-600",
-      appIconSymbol: "coffee",
-      role: "iOS Developer",
-      timeline: "4 Bulan",
-      thumbnail: "assets/images/projects/coffeeshop-1.svg",
-      screenshots: [
-        "assets/images/projects/coffeeshop-1.svg"
-      ],
-      shortDescription: "Aplikasi pemesanan kopi takeaway artisan dengan checkout satu sentuhan Apple Pay dan penjemputan berbasis estimasi radius toko MapKit.",
-      fullDescription: "Aplikasi retail food & beverage yang mengutamakan kecepatan pemesanan (frictionless checkout). Mengintegrasikan PassKit (Apple Pay) untuk pembayaran super cepat, MapKit untuk visualisasi gerai terdekat, dan push notification via APNs untuk status pesanan kopi secara langsung.",
-      metrics: {
-        downloads: "30K+",
-        rating: "4.7 ★",
-        crashFree: "99.85%"
-      },
-      techStack: ["SwiftUI", "PassKit (Apple Pay)", "MapKit", "CoreLocation", "APNs", "AlamoFire"],
-      keyFeatures: [
-        "One-tap checkout menggunakan Apple Pay (PassKit PKPaymentAuthorizationController).",
-        "Pencarian toko kopi terdekat dengan geofencing CoreLocation.",
-        "Katalog dinamis dengan filter varian biji kopi, roast level, dan susu alternatif.",
-        "Live status pesanan dari brewing hingga siap diambil."
-      ],
-      technicalChallenges: [
-        {
-          problem: "Handling status kegagalan transaksi Apple Pay pada koneksi jaringan yang tidak stabil.",
-          solution: "Menerapkan idempotency key pada backend handshake dan retry mechanism transparan pada layer networking."
-        }
-      ],
-      links: {
-        appStore: "https://apps.apple.com",
-        github: "https://github.com",
+        appStore: "https://apps.apple.com/id/app/linovhr/id1524317188",
+        github: null,
         testFlight: null
       }
     }

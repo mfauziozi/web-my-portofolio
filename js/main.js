@@ -746,6 +746,18 @@ function initNavigation() {
 function initOwnerMode() {
   const isOwner = localStorage.getItem('ios_portfolio_owner_mode') === 'true';
   toggleOwnerMode(isOwner, false);
+
+  // Cek parameter URL '?owner=true' atau '?admin=true'
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('owner') === 'true' || urlParams.get('admin') === 'true' || urlParams.has('owner')) {
+    if (!isOwner) {
+      setTimeout(() => {
+        openOwnerLoginModal();
+      }, 400);
+    } else {
+      showToast('Mode Owner Aktif ', 'success');
+    }
+  }
 }
 
 window.openOwnerLoginModal = function() {
@@ -779,7 +791,8 @@ window.handleOwnerLogin = function(e) {
   const err = document.getElementById('owner-login-error');
   if (!input) return;
 
-  if (input.value.trim() === 'admin' || input.value.trim() === '1234') {
+  const validPasscode = (portfolioData.owner && portfolioData.owner.passcode) ? portfolioData.owner.passcode : 'admin';
+  if (input.value.trim() === validPasscode || input.value.trim() === 'admin' || input.value.trim() === '1234') {
     toggleOwnerMode(true, true);
     closeOwnerLoginModal();
     showToast('Mode Owner Berhasil Diaktifkan! ', 'success');
