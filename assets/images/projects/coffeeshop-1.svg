@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 393 852" width="393" height="852">
+  <defs>
+    <linearGradient id="bgCoffee" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E0C0A"/>
+      <stop offset="100%" stop-color="#191410"/>
+    </linearGradient>
+    <linearGradient id="coffeeBrown" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="warmOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="393" height="852" fill="url(#bgCoffee)"/>
+
+  <!-- Status Bar -->
+  <text x="36" y="52" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-weight="600" font-size="15">9:41</text>
+  <g fill="#FFFFFF" transform="translate(325, 40)">
+    <path d="M18 5h2v6h-2zM14 7h2v4h-2zM10 9h2v2h-2zM6 10h2v1H6z"/>
+    <path d="M28 4h18a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H28a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm21 3v4a1.5 1.5 0 0 0 0-4z"/>
+    <rect x="30" y="6" width="13" height="6" rx="1.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Location Header -->
+  <g transform="translate(24, 76)">
+    <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5z" fill="#D97706"/>
+    <text x="28" y="12" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="11">LOKASI PICKUP</text>
+    <text x="28" y="30" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">Senopati Coffee Bar, Jakarta ▼</text>
+    
+    <!-- Cart button with badge -->
+    <circle cx="325" cy="20" r="18" fill="#292019"/>
+    <path d="M319 15h2l2.5 7h7.5l2-5h-11" stroke="#D97706" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <circle cx="324" cy="24" r="1.5" fill="#D97706"/>
+    <circle cx="330" cy="24" r="1.5" fill="#D97706"/>
+    <circle cx="333" cy="11" r="5" fill="#EF4444"/>
+    <text x="333" y="14" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="8" font-weight="700">2</text>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(20, 134)">
+    <rect width="353" height="46" rx="14" fill="#201914" stroke="#33271E" stroke-width="1"/>
+    <circle cx="28" cy="23" r="6" stroke="#94A3B8" stroke-width="1.8" fill="none"/>
+    <line x1="33" y1="28" x2="38" y2="33" stroke="#94A3B8" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="48" y="28" fill="#6B7280" font-family="-apple-system, sans-serif" font-size="14">Cari kopi favorit, oat milk, beans...</text>
+  </g>
+
+  <!-- Promo Banner with Apple Pay CTA -->
+  <g transform="translate(20, 196)">
+    <rect width="353" height="135" rx="22" fill="#261E17" stroke="#3D2E22" stroke-width="1"/>
+    <text x="20" y="34" fill="#D97706" font-family="-apple-system, sans-serif" font-size="12" font-weight="700">PROMO APPLE PAY</text>
+    <text x="20" y="62" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="20" font-weight="800">Diskon 30% Kopi Artisan</text>
+    <text x="20" y="84" fill="#A8A29E" font-family="-apple-system, sans-serif" font-size="12">Gunakan Apple Pay Touch/Face ID</text>
+    
+    <rect x="20" y="96" width="105" height="26" rx="8" fill="#000000"/>
+    <text x="72" y="113" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="11" font-weight="600"> Pay Aktif</text>
+
+    <!-- Coffee cup illustration -->
+    <circle cx="290" cy="68" r="42" fill="#D97706" opacity="0.2"/>
+    <path d="M272 52h36l-4 32a6 6 0 0 1-6 5h-16a6 6 0 0 1-6-5z" fill="#D97706"/>
+    <path d="M308 58h5a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4h-6" stroke="#D97706" stroke-width="2.5" fill="none"/>
+  </g>
+
+  <!-- Category Chips -->
+  <g transform="translate(20, 348)">
+    <rect x="0" y="0" width="86" height="34" rx="17" fill="#D97706"/>
+    <text x="43" y="21" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">Espresso</text>
+
+    <rect x="94" y="0" width="94" height="34" rx="17" fill="#201914" stroke="#33271E"/>
+    <text x="141" y="21" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="13">Cold Brew</text>
+
+    <rect x="196" y="0" width="76" height="34" rx="17" fill="#201914" stroke="#33271E"/>
+    <text x="234" y="21" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="13">Pastry</text>
+
+    <rect x="280" y="0" width="73" height="34" rx="17" fill="#201914" stroke="#33271E"/>
+    <text x="316" y="21" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="13">Beans</text>
+  </g>
+
+  <!-- Product Grid 2 Cards -->
+  <g transform="translate(20, 400)">
+    <!-- Card 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="170" height="215" rx="18" fill="#1F1813" stroke="#30241A" stroke-width="1"/>
+      <rect x="12" y="12" width="146" height="105" rx="14" fill="#2A2019"/>
+      <circle cx="85" cy="64" r="30" fill="#D97706" opacity="0.3"/>
+      <!-- Cup graphic -->
+      <path d="M72 50h26l-3 26a4 4 0 0 1-4 4h-12a4 4 0 0 1-4-4z" fill="#F59E0B"/>
+      <text x="14" y="138" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-weight="700" font-size="14">Caramel Macchiato</text>
+      <text x="14" y="156" fill="#78716C" font-family="-apple-system, sans-serif" font-size="11">Double shot + oat milk</text>
+      <text x="14" y="192" fill="#F59E0B" font-family="-apple-system, sans-serif" font-weight="800" font-size="15">Rp 42.000</text>
+      <circle cx="145" cy="186" r="14" fill="#D97706"/>
+      <path d="M145 181v10M140 186h10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(183, 0)">
+      <rect width="170" height="215" rx="18" fill="#1F1813" stroke="#30241A" stroke-width="1"/>
+      <rect x="12" y="12" width="146" height="105" rx="14" fill="#2A2019"/>
+      <circle cx="85" cy="64" r="30" fill="#38BDF8" opacity="0.3"/>
+      <!-- Iced drink graphic -->
+      <path d="M73 48h24l-3 30a4 4 0 0 1-4 4h-10a4 4 0 0 1-4-4z" fill="#0284C7"/>
+      <text x="14" y="138" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-weight="700" font-size="14">Iced Spanish Latte</text>
+      <text x="14" y="156" fill="#78716C" font-family="-apple-system, sans-serif" font-size="11">Condensed milk sweetness</text>
+      <text x="14" y="192" fill="#F59E0B" font-family="-apple-system, sans-serif" font-weight="800" font-size="15">Rp 38.000</text>
+      <circle cx="145" cy="186" r="14" fill="#D97706"/>
+      <path d="M145 181v10M140 186h10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Sticky Apple Pay Checkout Button -->
+  <g transform="translate(20, 630)">
+    <rect width="353" height="52" rx="16" fill="#000000" stroke="#333333" stroke-width="1.5"/>
+    <text x="176" y="32" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">Beli dengan  Pay • 2 Item</text>
+  </g>
+
+  <!-- iOS Tab Bar -->
+  <g transform="translate(0, 768)">
+    <rect width="393" height="84" fill="#120E0A" opacity="0.96"/>
+    <line x1="0" y1="0" x2="393" y2="0" stroke="#251C15" stroke-width="1"/>
+    <g transform="translate(60, 14)">
+      <path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-4h-4v4a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z" fill="#D97706"/>
+      <text x="12" y="32" text-anchor="middle" fill="#D97706" font-family="-apple-system, sans-serif" font-size="10" font-weight="600">Menu</text>
+    </g>
+    <g transform="translate(196, 14)">
+      <circle cx="12" cy="12" r="7" stroke="#64748B" stroke-width="2" fill="none"/>
+      <text x="12" y="32" text-anchor="middle" fill="#64748B" font-family="-apple-system, sans-serif" font-size="10">Pesanan</text>
+    </g>
+    <g transform="translate(330, 14)">
+      <circle cx="12" cy="12" r="7" stroke="#64748B" stroke-width="2" fill="none"/>
+      <text x="12" y="32" text-anchor="middle" fill="#64748B" font-family="-apple-system, sans-serif" font-size="10">Hadiah</text>
+    </g>
+    <rect x="126" y="66" width="140" height="4" rx="2" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+</svg>
+

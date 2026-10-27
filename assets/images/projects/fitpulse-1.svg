@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 393 852" width="393" height="852">
+  <defs>
+    <linearGradient id="bgFit" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05080E"/>
+      <stop offset="100%" stop-color="#0A0E18"/>
+    </linearGradient>
+    <linearGradient id="ringRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FA114F"/>
+      <stop offset="100%" stop-color="#FF5277"/>
+    </linearGradient>
+    <linearGradient id="ringGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A1FF00"/>
+      <stop offset="100%" stop-color="#00F5A0"/>
+    </linearGradient>
+    <linearGradient id="ringCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#0080FF"/>
+    </linearGradient>
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="393" height="852" fill="url(#bgFit)"/>
+
+  <!-- Top Ambient Glow -->
+  <circle cx="200" cy="180" r="160" fill="#FA114F" opacity="0.08" filter="url(#glowEffect)"/>
+
+  <!-- Status Bar -->
+  <text x="36" y="52" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-weight="600" font-size="15">9:41</text>
+  <g fill="#FFFFFF" transform="translate(325, 40)">
+    <path d="M18 5h2v6h-2zM14 7h2v4h-2zM10 9h2v2h-2zM6 10h2v1H6z"/>
+    <path d="M28 4h18a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H28a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm21 3v4a1.5 1.5 0 0 0 0-4z"/>
+    <rect x="30" y="6" width="13" height="6" rx="1.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Navigation Bar -->
+  <g transform="translate(24, 76)">
+    <text x="0" y="16" fill="#FA114F" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="1">SENIN, 18 SEPTEMBER</text>
+    <text x="0" y="44" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-weight="800" font-size="28">Aktivitas Saya</text>
+    <circle cx="325" cy="28" r="18" fill="#1A2030"/>
+    <path d="M325 20c-3.3 0-6 2.7-6 6v3c-1.1.5-2 1.6-2 3v1h16v-1c0-1.4-.9-2.5-2-3v-3c0-3.3-2.7-6-6-6z" fill="#00F5A0"/>
+  </g>
+
+  <!-- Activity Rings & Summary Card -->
+  <g transform="translate(20, 140)">
+    <rect width="353" height="195" rx="24" fill="#111624" stroke="#1E2638" stroke-width="1"/>
+    
+    <!-- Activity Rings (Red Move, Green Exercise, Cyan Stand) -->
+    <g transform="translate(95, 98)">
+      <!-- Red Move Track & Ring -->
+      <circle cx="0" cy="0" r="68" stroke="#FA114F" stroke-opacity="0.2" stroke-width="13" fill="none"/>
+      <circle cx="0" cy="0" r="68" stroke="url(#ringRed)" stroke-width="13" fill="none" stroke-linecap="round" stroke-dasharray="427" stroke-dashoffset="90" transform="rotate(-90)"/>
+
+      <!-- Green Exercise Track & Ring -->
+      <circle cx="0" cy="0" r="50" stroke="#00F5A0" stroke-opacity="0.2" stroke-width="13" fill="none"/>
+      <circle cx="0" cy="0" r="50" stroke="url(#ringGreen)" stroke-width="13" fill="none" stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="60" transform="rotate(-90)"/>
+
+      <!-- Cyan Stand Track & Ring -->
+      <circle cx="0" cy="0" r="32" stroke="#00F0FF" stroke-opacity="0.2" stroke-width="13" fill="none"/>
+      <circle cx="0" cy="0" r="32" stroke="url(#ringCyan)" stroke-width="13" fill="none" stroke-linecap="round" stroke-dasharray="201" stroke-dashoffset="30" transform="rotate(-90)"/>
+    </g>
+
+    <!-- Ring Legend / Stats -->
+    <g transform="translate(205, 38)">
+      <!-- Move -->
+      <text x="0" y="14" fill="#FA114F" font-family="-apple-system, sans-serif" font-size="12" font-weight="700">GERAKAN</text>
+      <text x="0" y="34" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="20" font-weight="800">580<tspan font-size="13" font-weight="500" fill="#94A3B8">/650 KAL</tspan></text>
+
+      <!-- Exercise -->
+      <text x="0" y="66" fill="#00F5A0" font-family="-apple-system, sans-serif" font-size="12" font-weight="700">LATIHAN</text>
+      <text x="0" y="86" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="20" font-weight="800">42<tspan font-size="13" font-weight="500" fill="#94A3B8">/30 MENIT</tspan></text>
+
+      <!-- Stand -->
+      <text x="0" y="118" fill="#00F0FF" font-family="-apple-system, sans-serif" font-size="12" font-weight="700">BERDIRI</text>
+      <text x="0" y="138" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="20" font-weight="800">10<tspan font-size="13" font-weight="500" fill="#94A3B8">/12 JAM</tspan></text>
+    </g>
+  </g>
+
+  <!-- HealthKit Metrics 2-column Grid -->
+  <g transform="translate(20, 355)">
+    <!-- Heart Rate Card -->
+    <g transform="translate(0, 0)">
+      <rect width="170" height="150" rx="20" fill="#111624" stroke="#1E2638" stroke-width="1"/>
+      <circle cx="32" cy="32" r="14" fill="#EF4444" opacity="0.15"/>
+      <path d="M32 26c-3-3-8 0-4 6l4 5 4-5c4-6-1-9-4-6z" fill="#EF4444"/>
+      <text x="56" y="36" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">Detak Jantung</text>
+      <text x="20" y="78" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="30" font-weight="800">72 <tspan font-size="14" font-weight="500" fill="#94A3B8">BPM</tspan></text>
+      <!-- Mini ECG Wave -->
+      <path d="M20 120 L50 120 L58 102 L66 135 L74 110 L82 120 L150 120" stroke="#EF4444" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Sleep Tracker Card -->
+    <g transform="translate(183, 0)">
+      <rect width="170" height="150" rx="20" fill="#111624" stroke="#1E2638" stroke-width="1"/>
+      <circle cx="32" cy="32" r="14" fill="#8B5CF6" opacity="0.15"/>
+      <path d="M36 28a6 6 0 1 1-6-6 4.5 4.5 0 0 0 6 6z" fill="#A78BFA"/>
+      <text x="56" y="36" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">Tidur</text>
+      <text x="20" y="78" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="30" font-weight="800">7<tspan font-size="18" font-weight="600">j </tspan>45<tspan font-size="14" font-weight="500" fill="#94A3B8">m</tspan></text>
+      <!-- Sleep bars -->
+      <g transform="translate(20, 105)">
+        <rect x="0" y="5" width="22" height="18" rx="4" fill="#6366F1"/>
+        <rect x="28" y="0" width="22" height="23" rx="4" fill="#8B5CF6"/>
+        <rect x="56" y="8" width="22" height="15" rx="4" fill="#A78BFA"/>
+        <rect x="84" y="3" width="22" height="20" rx="4" fill="#6366F1"/>
+        <rect x="112" y="1" width="22" height="22" rx="4" fill="#8B5CF6"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Live Workout Section -->
+  <g transform="translate(20, 525)">
+    <text x="4" y="16" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="17" font-weight="700">Rencana Latihan Hari Ini</text>
+    
+    <g transform="translate(0, 30)">
+      <rect width="353" height="74" rx="18" fill="#111624" stroke="#1E2638" stroke-width="1"/>
+      <rect x="14" y="14" width="46" height="46" rx="12" fill="#FA114F" opacity="0.15"/>
+      <path d="M32 26v22M42 26v22M27 37h20" stroke="#FA114F" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="72" y="36" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-weight="600" font-size="15">HIIT Cardio Intense</text>
+      <text x="72" y="54" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12">45 Menit • 380 Kalori Target</text>
+      <circle cx="315" cy="37" r="15" fill="#00F5A0"/>
+      <path d="M312 32l8 5-8 5z" fill="#05080E"/>
+    </g>
+
+    <g transform="translate(0, 115)">
+      <rect width="353" height="74" rx="18" fill="#111624" stroke="#1E2638" stroke-width="1"/>
+      <rect x="14" y="14" width="46" height="46" rx="12" fill="#00F0FF" opacity="0.15"/>
+      <!-- Running figure outline -->
+      <circle cx="37" cy="27" r="3.5" fill="#00F0FF"/>
+      <path d="M32 37l5-5 3 2 4 6M37 32l-3 10-6 4" stroke="#00F0FF" stroke-width="2" stroke-linecap="round"/>
+      <text x="72" y="36" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-weight="600" font-size="15">Outdoor Run 5K</text>
+      <text x="72" y="54" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12">GPS & Pace Tracking via CoreLocation</text>
+      <circle cx="315" cy="37" r="15" fill="#1E2638"/>
+      <path d="M310 37l4 4 7-7" stroke="#00F5A0" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- iOS Tab Bar -->
+  <g transform="translate(0, 768)">
+    <rect width="393" height="84" fill="#090D16" opacity="0.96"/>
+    <line x1="0" y1="0" x2="393" y2="0" stroke="#172033" stroke-width="1"/>
+    <!-- Summary -->
+    <g transform="translate(60, 14)">
+      <circle cx="12" cy="12" r="7" stroke="#FA114F" stroke-width="2.5" fill="none"/>
+      <text x="12" y="32" text-anchor="middle" fill="#FA114F" font-family="-apple-system, sans-serif" font-size="10" font-weight="600">Ringkasan</text>
+    </g>
+    <!-- Sharing -->
+    <g transform="translate(196, 14)">
+      <circle cx="8" cy="8" r="3" fill="#64748B"/>
+      <circle cx="16" cy="14" r="3" fill="#64748B"/>
+      <line x1="10" y1="9" x2="14" y2="13" stroke="#64748B" stroke-width="1.5"/>
+      <text x="12" y="32" text-anchor="middle" fill="#64748B" font-family="-apple-system, sans-serif" font-size="10">Berbagi</text>
+    </g>
+    <!-- Fitness+ -->
+    <g transform="translate(330, 14)">
+      <rect x="4" y="4" width="16" height="16" rx="4" stroke="#64748B" stroke-width="2" fill="none"/>
+      <polygon points="10,9 16,12 10,15" fill="#64748B"/>
+      <text x="12" y="32" text-anchor="middle" fill="#64748B" font-family="-apple-system, sans-serif" font-size="10">Fitness+</text>
+    </g>
+    <rect x="126" y="66" width="140" height="4" rx="2" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+</svg>
+

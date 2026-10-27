@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09122C"/>
+      <stop offset="50%" stop-color="#1E3E62"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="swiftOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5A36"/>
+      <stop offset="100%" stop-color="#F05138"/>
+    </linearGradient>
+    <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="50%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="100" cy="100" r="98" fill="none" stroke="url(#borderGlow)" stroke-width="3"/>
+
+  <!-- Inner Circle -->
+  <circle cx="100" cy="100" r="93" fill="url(#avatarBg)"/>
+
+  <!-- Subtle grid pattern inside -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-dasharray="4,4"/>
+
+  <!-- Stylized Memoji / Developer Silhouette -->
+  <!-- Shoulders -->
+  <path d="M40 185 c0 -35 25 -55 60 -55 s60 20 60 55 z" fill="#0A0F1D"/>
+  <path d="M55 185 c0 -25 18 -42 45 -42 s45 17 45 42 z" fill="#172554"/>
+
+  <!-- Head & Neck -->
+  <rect x="88" y="115" width="24" height="25" rx="6" fill="#F8C39E"/>
+  <ellipse cx="100" cy="92" rx="36" ry="42" fill="#F8C39E"/>
+
+  <!-- Hair Modern Style -->
+  <path d="M64 85 c0 -28 15 -48 38 -48 c20 0 38 12 38 32 c0 8 -4 14 -8 16 c-2 -12 -12 -22 -28 -22 c-15 0 -26 8 -30 18 c-6 -2 -10 0 -10 4 z" fill="#0F172A"/>
+
+  <!-- Glasses / Modern iOS Dev Frames -->
+  <rect x="73" y="80" width="22" height="16" rx="5" fill="none" stroke="#000000" stroke-width="3"/>
+  <rect x="105" y="80" width="22" height="16" rx="5" fill="none" stroke="#000000" stroke-width="3"/>
+  <line x1="95" y1="88" x2="105" y2="88" stroke="#000000" stroke-width="3"/>
+  <!-- Eyes -->
+  <circle cx="84" cy="88" r="3" fill="#0F172A"/>
+  <circle cx="116" cy="88" r="3" fill="#0F172A"/>
+
+  <!-- Smile -->
+  <path d="M92 108 Q100 116 108 108" fill="none" stroke="#B45309" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Swift Badge Floating at Bottom Right -->
+  <g transform="translate(132, 132)">
+    <circle cx="28" cy="28" r="26" fill="#060913" stroke="#1E293B" stroke-width="2"/>
+    <circle cx="28" cy="28" r="22" fill="url(#swiftOrange)"/>
+    <!-- Swift Bird Icon -->
+    <path d="M19 36 C 21 34, 25 31, 28 27 C 29 25, 30 22, 30 18 C 30 22, 33 24, 37 25 C 40 26, 42 26, 43 25 C 40 28, 36 31, 30 33 C 26 35, 22 36, 19 36 Z" fill="#FFFFFF"/>
+    <path d="M24 37 C 29 36, 33 34, 37 29 C 39 27, 40 24, 40 21 C 37 24, 33 26, 28 26 C 25 26, 23 27, 20 29 C 18 31, 16 34, 15 37 C 18 37, 21 37, 24 37 Z" fill="#FFFFFF"/>
+  </g>
+</svg>

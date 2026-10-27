@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 393 852" width="393" height="852">
+  <defs>
+    <linearGradient id="bgSheet" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0A0B10"/>
+      <stop offset="100%" stop-color="#141622"/>
+    </linearGradient>
+    <linearGradient id="indigoButton" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#1E40AF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="393" height="852" fill="url(#bgSheet)"/>
+
+  <!-- Status Bar -->
+  <text x="36" y="52" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-weight="600" font-size="15">9:41</text>
+  <g fill="#FFFFFF" transform="translate(325, 40)">
+    <path d="M18 5h2v6h-2zM14 7h2v4h-2zM10 9h2v2h-2zM6 10h2v1H6z"/>
+    <path d="M28 4h18a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H28a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm21 3v4a1.5 1.5 0 0 0 0-4z"/>
+    <rect x="30" y="6" width="13" height="6" rx="1.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Navigation Bar -->
+  <g transform="translate(24, 76)">
+    <circle cx="18" cy="18" r="18" fill="#1E2235"/>
+    <path d="M21 12l-6 6 6 6" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="172" y="24" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-weight="700" font-size="17">Kirim Kripto</text>
+  </g>
+
+  <!-- Transfer Amount Box -->
+  <g transform="translate(20, 140)">
+    <text x="176" y="24" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="14">Masukkan Nominal</text>
+    <text x="176" y="80" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="44" font-weight="800">0.25 ETH</text>
+    <text x="176" y="112" text-anchor="middle" fill="#38BDF8" font-family="-apple-system, sans-serif" font-size="15">≈ Rp 12.150.000</text>
+  </g>
+
+  <!-- Recipient Address Card -->
+  <g transform="translate(20, 290)">
+    <rect width="353" height="90" rx="20" fill="#181B2B" stroke="#282E47" stroke-width="1"/>
+    <text x="20" y="28" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12">KIRIM KE WALLET</text>
+    <text x="20" y="55" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-weight="600" font-size="15">0x71C...B289F4</text>
+    <text x="20" y="74" fill="#34D399" font-family="-apple-system, sans-serif" font-size="12">✓ Address Verified (ENS: satoshi.eth)</text>
+    <circle cx="320" cy="45" r="16" fill="#252C42"/>
+    <rect x="314" y="39" width="12" height="12" rx="2" stroke="#38BDF8" stroke-width="1.8" fill="none"/>
+  </g>
+
+  <!-- Gas Fee & Network Details -->
+  <g transform="translate(20, 400)">
+    <rect width="353" height="130" rx="20" fill="#181B2B" stroke="#282E47" stroke-width="1"/>
+    
+    <text x="20" y="32" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="13">Jaringan</text>
+    <text x="333" y="32" text-anchor="end" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-weight="600" font-size="13">Ethereum Mainnet</text>
+    
+    <line x1="20" y1="46" x2="333" y2="46" stroke="#282E47"/>
+    
+    <text x="20" y="72" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="13">Estimasi Biaya Gas (Gwei)</text>
+    <text x="333" y="72" text-anchor="end" fill="#34D399" font-family="-apple-system, sans-serif" font-weight="600" font-size="13">18 Gwei (Rp 18.200)</text>
+    
+    <line x1="20" y1="86" x2="333" y2="86" stroke="#282E47"/>
+    
+    <text x="20" y="112" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="13">Kecepatan Konfirmasi</text>
+    <text x="333" y="112" text-anchor="end" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-weight="600" font-size="13">&lt; 15 Detik</text>
+  </g>
+
+  <!-- Biometric FaceID Verification Prompt -->
+  <g transform="translate(20, 560)">
+    <rect width="353" height="135" rx="24" fill="#151724" stroke="#1D4ED8" stroke-width="1.5"/>
+    <!-- Face ID icon -->
+    <g transform="translate(156, 20)">
+      <rect x="0" y="0" width="40" height="40" rx="10" fill="#1D4ED8" opacity="0.15"/>
+      <path d="M12 8h-4a2 2 0 0 0-2 2v4M28 8h4a2 2 0 0 1 2 2v4M8 28v-4a2 2 0 0 1 2-2M32 28v-4a2 2 0 0 0-2-2" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="15" cy="18" r="1.5" fill="#38BDF8"/>
+      <circle cx="25" cy="18" r="1.5" fill="#38BDF8"/>
+      <path d="M17 24q3 3 6 0" stroke="#38BDF8" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+    <text x="176" y="86" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">Konfirmasi Biometrik LocalAuthentication</text>
+    <text x="176" y="108" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12">Gunakan Face ID atau Touch ID untuk mengirim</text>
+  </g>
+
+  <!-- Confirm Button -->
+  <g transform="translate(20, 720)">
+    <rect width="353" height="56" rx="18" fill="url(#indigoButton)"/>
+    <text x="176" y="34" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="16" font-weight="700">Kirim Transaksi Sekarang</text>
+  </g>
+  <rect x="126" y="834" width="140" height="4" rx="2" fill="#FFFFFF" opacity="0.6"/>
+</svg>
+
