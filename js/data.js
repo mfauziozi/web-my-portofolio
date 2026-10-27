@@ -146,9 +146,13 @@ const portfolioData = {
       appIconSymbol: "file-check",
       role: "iOS Developer",
       timeline: "Enterprise Security",
-      thumbnail: "assets/images/projects/privy/privy-mockup.svg",
+      thumbnail: "assets/images/projects/privy/privy-home.png",
       screenshots: [
-        "assets/images/projects/privy/privy-mockup.svg"
+        "assets/images/projects/privy/privy-home.png",
+        "assets/images/projects/privy/privy-splash.png",
+        "assets/images/projects/privy/privy-tasks.png",
+        "assets/images/projects/privy/privy-actions.png",
+        "assets/images/projects/privy/privy-profile.png"
       ],
       shortDescription: "Aplikasi identitas digital dan tanda tangan elektronik tersertifikasi (PSrE) yang sah secara hukum, mengamankan penandatanganan dokumen digital multi-pihak secara native di iOS.",
       fullDescription: "Mengembangkan modul penandatanganan dokumen elektronik dan verifikasi identitas pengguna pada aplikasi Privy iOS. Bertanggung jawab atas integrasi PDF rendering & interaksi kustom berbasis PDFKit, alur verifikasi biometrik e-KYC dengan liveness detection, serta pengelolaan sertifikat digital berstandar keamanan tinggi.",
