@@ -36,7 +36,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body class="bg-[#060913] text-slate-100 min-h-screen relative selection:bg-blue-700 selection:text-white">
 
@@ -569,14 +569,14 @@
           </div>
 
           <!-- Gallery Navigation & Thumbnails -->
-          <div class="mt-4 flex items-center gap-3">
-            <button id="modal-gallery-prev" class="p-2 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] text-slate-400 hover:text-white transition-colors">
+          <div class="mt-4 flex items-center justify-center gap-2 max-w-[260px] w-full">
+            <button id="modal-gallery-prev" class="p-2 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] text-slate-400 hover:text-white transition-colors shrink-0" aria-label="Previous screenshot">
               <i data-lucide="chevron-left" class="w-4 h-4"></i>
             </button>
-            <div id="modal-thumbnails-container" class="flex items-center gap-2 overflow-x-auto py-1">
+            <div id="modal-thumbnails-container" class="flex items-center gap-2 overflow-x-auto py-1 px-1 scroll-smooth">
               <!-- Thumbnails injected dynamically -->
             </div>
-            <button id="modal-gallery-next" class="p-2 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] text-slate-400 hover:text-white transition-colors">
+            <button id="modal-gallery-next" class="p-2 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] text-slate-400 hover:text-white transition-colors shrink-0" aria-label="Next screenshot">
               <i data-lucide="chevron-right" class="w-4 h-4"></i>
             </button>
           </div>
@@ -760,7 +760,7 @@
   </div>
 
   <!-- Data & Logic Scripts -->
-  <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/data.js?v=3"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>

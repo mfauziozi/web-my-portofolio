@@ -404,6 +404,7 @@ function setupModalGallery() {
       if (i === currentModalScreenIndex) {
         t.classList.add('ring-2', 'ring-blue-500', 'opacity-100');
         t.classList.remove('opacity-60');
+        t.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
       } else {
         t.classList.remove('ring-2', 'ring-blue-500', 'opacity-100');
         t.classList.add('opacity-60');
@@ -415,7 +416,7 @@ function setupModalGallery() {
   if (thumbsContainer) {
     thumbsContainer.innerHTML = screenshots.map((src, i) => `
       <button 
-        class="modal-thumb-btn w-12 h-20 rounded-xl overflow-hidden border border-white/10 transition-all ${i === 0 ? 'ring-2 ring-blue-500 opacity-100' : 'opacity-60 hover:opacity-100'}"
+        class="modal-thumb-btn shrink-0 w-12 h-20 rounded-xl overflow-hidden border border-white/10 transition-all ${i === 0 ? 'ring-2 ring-blue-500 opacity-100' : 'opacity-60 hover:opacity-100'}"
         onclick="setModalScreenIndex(${i})">
         <img src="${src}" class="w-full h-full object-cover" alt="Thumb ${i+1}" />
       </button>

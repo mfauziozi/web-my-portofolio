@@ -15,7 +15,7 @@ const portfolioData = {
   // Informasi Pribadi
   profile: {
     name: "Muchamad Fauzi",
-    title: "Senior iOS Developer & Swift Specialist",
+    title: "Senior iOS Developer (Swift)",
     tagline: "Merancang & Membangun Pengalaman Native iOS Berkinerja Tinggi, Skalabilitas Tinggi, dan Handal.",
     shortBio: "Seorang iOS Developer dengan rekam jejak mengembangkan aplikasi native berskala besar, termasuk ekosistem perbankan digital nasional (BRImo), tanda tangan digital tersertifikasi (Privy), dan enterprise HR (Linov HR 5). Berpengalaman mendalam dalam Swift, UIKit, SwiftUI, arsitektur modular, dan standar keamanan mobile.",
     avatar: "assets/images/profile/avatar.svg",
@@ -100,7 +100,9 @@ const portfolioData = {
         "assets/images/projects/brimo/brimo-login.png",
         "assets/images/projects/brimo/brimo-atur-fitur.png",
         "assets/images/projects/brimo/brimo-favorit.png",
-        "assets/images/projects/brimo/brimo-account.png"
+        "assets/images/projects/brimo/brimo-account.png",
+        "assets/images/projects/brimo/brimo-lifestyle-1.png",
+        "assets/images/projects/brimo/brimo-lifestyle-2.png"
       ],
       shortDescription: "Aplikasi mobile banking terbesar di Indonesia dengan puluhan juta pengguna aktif, menghadirkan transaksi finansial real-time, personalisasi dashboard (Atur Fitur), QRIS, dan modul Lifestyle perbankan.",
       fullDescription: "Berkontribusi langsung dalam pengembangan dan peningkatan performa aplikasi perbankan digital BRImo pada platform native iOS. Terlibat aktif dalam implementasi modul Dashboard Lifestyle, personalisasi menu (Atur Fitur & Fitur Favorit), alur konfirmasi transaksi (Pattern Confirmation & Receipt Revamp), integrasi autentikasi biometrik Face ID/Touch ID, serta pemisahan kode modular yang aman dan berkinerja tinggi.",
